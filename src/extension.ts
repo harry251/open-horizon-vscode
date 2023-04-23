@@ -6,6 +6,7 @@ import * as path from 'path';
 import { createService } from './serviceCreationWizard';
 import { PolicyCreationWizard } from './policyCreationWizard';
 import { isValidPolicy } from './policyValidator';
+import { activateLanguageServer } from './languageServer/activateLanguageServer';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -14,6 +15,9 @@ export function activate(context: vscode.ExtensionContext) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "openhorizon" is now active!');
+
+  // Activate the language server
+  activateLanguageServer(context);
 
 	context.subscriptions.push(
         vscode.commands.registerCommand('openHorizon.createService', async () => {
