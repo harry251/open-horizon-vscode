@@ -9,7 +9,14 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:openHorizon.createService",
+    "onCommand:openHorizon.createPolicy",
+    "onCommand:openHorizon.switchPolicy",
+    "onCommand:openHorizon.importPolicy",
+    "onCommand:openHorizon.exportPolicy",
+    "onLanguage:json"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -66,6 +73,7 @@
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
     "typescript": "^4.9.5",
-    "@vscode/test-electron": "^2.2.3"
+    "@vscode/test-electron": "^2.2.3",
+    "vscode-languageserver": "^8.1.0"
   }
 }
