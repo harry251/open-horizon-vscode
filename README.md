@@ -40,6 +40,12 @@ The extension verifies if a policy file is valid before switching, importing, or
 ### **Service creation wizard**
 A wizard that guides users through the process of creating a new Open Horizon service, including defining the service's metadata, dependencies, and deployment parameters.
 
+## Service validation and testing
+
+The extension provides syntax checking and linting features for policy files to help users ensure their policy files are correct and follow the required structure. The features offer real-time error checking, autocompletion, and hover information while editing policy files. The future plan includes implementing test validation for Open Horizon.
+
+For more information on using the syntax checking, linting, and the future test validation feature, please see the [Policy Syntax and Linting Documentation](policy-syntax-linting.md).
+
 ## **Features to be added**
 
 ### **Service deployment and management**
@@ -47,9 +53,6 @@ Tools and commands that allow users to deploy and manage their Open Horizon serv
 
 ### **Project templates**
 Pre-defined project templates that help users get started quickly with creating Open Horizon services, including templates for different types of services and programming languages.
-
-### **Service validation and testing**
-Tools and commands that help users validate and test their Open Horizon services before deployment, including syntax checking, linting, and automated testing.
 
 ### **Service updates and versioning**
 Tools and commands that help users manage updates and versioning of their Open Horizon services, including creating new versions, rolling back to previous versions, and managing service dependencies.
